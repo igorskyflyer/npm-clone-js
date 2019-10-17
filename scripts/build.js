@@ -15,6 +15,8 @@ function clearDir() {
 	})
 }
 
+console.log('Building...')
+
 exec('npm pack', (err, out, stderr) => {
 	if (err) {
 		throw err
@@ -26,5 +28,8 @@ exec('npm pack', (err, out, stderr) => {
 	if (fs.existsSync(filepath)) {
 		clearDir()
 		fs.renameSync(filepath, path.resolve(releaseDirectory, filename))
+
+		console.clear()
+		console.log('Build completed.')
 	}
 })
