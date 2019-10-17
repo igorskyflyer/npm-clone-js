@@ -1,4 +1,4 @@
-![clone.js](https://github.com/igorskyflyer/clone.js/raw/master/assets/clone.js.png)
+![clone.js](https://github.com/igorskyflyer/npm-clone-js/raw/master/assets/clone.js.png)
 
 # npm('clone.js')
 
