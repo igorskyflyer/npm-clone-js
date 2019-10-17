@@ -13,13 +13,13 @@ A NPM package wrapper around a lightweight JavaScript utility allowing deep copy
 ### Install
 
 ```javascript
-npm install --save clone-js
+npm install --save node-clone-js
 ```
 
 ### Simple array copy
 
 ```javascript
-const clone = require('clone-js')
+const clone = require('node-clone-js')
 
 let firstArray = [1, 2, 3]
 let secondArray = clone(firstArray)
@@ -33,7 +33,7 @@ console.log('secondArray => ', secondArray) // [5, 2, 3]
 ### Complex array (array of objects)
 
 ```javascript
-const clone = require('clone-js')
+const clone = require('node-clone-js')
 
 let firstArray = [
 	{
@@ -56,7 +56,7 @@ console.log('secondArray => ', secondArray)
 ### Simple object copy
 
 ```javascript
-const clone = require('clone-js')
+const clone = require('node-clone-js')
 
 let firstStudent = {
 	id: 103,
@@ -75,7 +75,7 @@ console.log('secondStudent => ', secondStudent)
 ### Nested object copy
 
 ```javascript
-const clone = require('clone-js')
+const clone = require('node-clone-js')
 
 let firstStudent = {
 	id: 103,

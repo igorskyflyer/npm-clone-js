@@ -1,5 +1,5 @@
 {
-	"name": "clone-js",
+	"name": "node-clone-js",
 	"version": "1.0.0",
 	"description": "A lightweight JavaScript utility allowing deep copy-by-value of nested objects, arrays and arrays of objects.",
 	"main": "index.js",
