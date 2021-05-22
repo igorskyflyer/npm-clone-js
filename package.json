@@ -1,39 +1,39 @@
 {
-	"name": "node-clone-js",
-	"version": "1.0.0",
-	"description": "A lightweight JavaScript utility allowing deep copy-by-value of nested objects, arrays and arrays of objects.",
-	"main": "index.js",
-	"scripts": {
-		"test": "mocha --slow 0",
-		"benchmark": "node ./benchmark/index.js",
-		"build": "node ./scripts/build.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/igorskyflyer/npm-clone-js"
-	},
-	"bugs": {
-		"url": "https://github.com/igorskyflyer/npm-clone-js/issues"
-	},
-	"homepage": "https://github.com/igorskyflyer/npm-clone-js#readme",
-	"keywords": [
-		"clone",
-		"copy",
-		"array",
-		"nested",
-		"value",
-		"utility",
-		"lightweight",
-		"objects",
-		"igorskyflyer"
-	],
-	"author": "Igor Dimitrijević",
-	"license": "MIT",
-	"devDependencies": {
-		"chai": "^4.2.0",
-		"mocha": "^6.2.0",
-		"benchmark": "2.1.4",
-		"beautify-benchmark": "0.2.4"
-	},
-	"dependencies": {}
+  "name": "node-clone-js",
+  "version": "1.0.1",
+  "description": "A lightweight JavaScript utility allowing deep copy-by-value of nested objects, arrays and arrays of objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --slow 0",
+    "benchmark": "node ./benchmark/index.js",
+    "build": "node ./scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igorskyflyer/npm-clone-js"
+  },
+  "bugs": {
+    "url": "https://github.com/igorskyflyer/npm-clone-js/issues"
+  },
+  "homepage": "https://github.com/igorskyflyer/npm-clone-js#readme",
+  "keywords": [
+    "clone",
+    "copy",
+    "array",
+    "nested",
+    "value",
+    "utility",
+    "lightweight",
+    "objects",
+    "igorskyflyer"
+  ],
+  "author": "Igor Dimitrijević",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "benchmark": "2.1.4",
+    "beautify-benchmark": "0.2.4"
+  },
+  "dependencies": {}
 }
