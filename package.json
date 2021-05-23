@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha --slow 0",
     "benchmark": "node ./benchmark/index.js",
-    "build": "node ./scripts/build.js"
+    "build": "node ./scripts/build.js",
+    "party": "npm test && npm publish"
   },
   "repository": {
     "type": "git",
