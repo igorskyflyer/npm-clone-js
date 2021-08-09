@@ -8,6 +8,10 @@ A NPM package wrapper around a lightweight JavaScript utility allowing deep copy
 
 <br>
 
+✨Since version `1.1.0` `clone` is a hybrid module that supports both CommonJS (legacy) and ES modules, thanks to [Modern Module](https://github.com/igorskyflyer/npm-modern-module).
+
+<br>
+
 ## Usage
 
 ### Install
@@ -36,14 +40,14 @@ console.log('secondArray => ', secondArray) // [5, 2, 3]
 const clone = require('node-clone-js')
 
 let firstArray = [
-	{
-		id: '103',
-		name: 'Peter'
-	},
-	{
-		id: '214',
-		name: 'Eve'
-	}
+  {
+    id: '103',
+    name: 'Peter',
+  },
+  {
+    id: '214',
+    name: 'Eve',
+  },
 ]
 let secondArray = clone(firstArray)
 
@@ -59,9 +63,9 @@ console.log('secondArray => ', secondArray)
 const clone = require('node-clone-js')
 
 let firstStudent = {
-	id: 103,
-	name: 'Ben',
-	classes: ['Maths', 'Science', 'English language']
+  id: 103,
+  name: 'Ben',
+  classes: ['Maths', 'Science', 'English language'],
 }
 
 let secondStudent = clone(firstStudent)
@@ -78,17 +82,17 @@ console.log('secondStudent => ', secondStudent)
 const clone = require('node-clone-js')
 
 let firstStudent = {
-	id: 103,
-	name: 'Ben',
-	subjects: {
-		groupDke: {
-			science: 'B',
-			maths: 'C'
-		},
-		groupOpe: {
-			foo: 'bar'
-		}
-	}
+  id: 103,
+  name: 'Ben',
+  subjects: {
+    groupDke: {
+      science: 'B',
+      maths: 'C',
+    },
+    groupOpe: {
+      foo: 'bar',
+    },
+  },
 }
 
 let secondStudent = clone(firstStudent)
