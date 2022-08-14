@@ -1,6 +1,6 @@
 {
 	"name": "node-clone-js",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "🧬 A lightweight JavaScript utility allowing deep copy-by-value of nested objects, arrays and arrays of objects. 🪁",
 	"engines": {
 		"node": ">=12.17"
@@ -45,10 +45,10 @@
 	"author": "Igor Dimitrijević",
 	"license": "MIT",
 	"devDependencies": {
-		"@types/chai": "^4.2.21",
-		"@types/mocha": "^9.0.0",
-		"chai": "^4.3.4",
-		"mocha": "^9.0.3",
-		"typescript": "^4.3.5"
+		"@types/chai": "^4.3.3",
+		"@types/mocha": "^9.1.1",
+		"chai": "^4.3.6",
+		"mocha": "^10.0.0",
+		"typescript": "^4.7.4"
 	}
 }
