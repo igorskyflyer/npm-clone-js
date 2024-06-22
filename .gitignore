@@ -1,13 +1,2 @@
-# Directories
-
-## Node modules
-/node_modules/
-## Release directory
-/release/
-
-# Files
-
-## NPM Ignore
-.npmignore
-
+node_modules/
 dist/
