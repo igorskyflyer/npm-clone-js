@@ -17,5 +17,12 @@
 			"semicolons": "asNeeded",
 			"trailingCommas": "none"
 		}
+	},
+	"linter": {
+		"rules": {
+			"suspicious": {
+				"noExplicitAny": "off"
+			}
+		}
 	}
 }
