@@ -171,3 +171,9 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 [@igor.dvlpr/recursive-readdir](https://www.npmjs.com/package/@igor.dvlpr/recursive-readdir)
 
 > _📖 Provides recursive readdir() and readdirSync() functions. 📁_
+
+<br>
+
+>
+> Provided by Igor Dimitrijević (@igorskyflyer).
+>
