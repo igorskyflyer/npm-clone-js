@@ -1,36 +1,55 @@
-![clone.js](https://github.com/igorskyflyer/npm-clone-js/raw/master/assets/clone.js.png)
+![clone.js](https://github.com/igorskyflyer/npm-clone-js/raw/main/assets/clone.js.png)
+
+🧬 A lightweight JavaScript utility allowing deep copy-by-value of nested objects, arrays and arrays of objects. 🪁
 
 # npm('clone.js')
 
-A NPM package wrapper around a lightweight JavaScript utility allowing deep copy-by-value of nested objects, arrays and arrays of objects.
-
->
-> This package has been deprecated, please use [@igor.dvlpr/node-clone-js](https://www.npmjs.com/package/@igor.dvlpr/node-clone-js) instead.
->
-
-> Original repository, [clone.js](https://github.com/igorskyflyer/clone.js).
-
+<br>
 <br>
 
-✨Since version `1.1.0` `clone` is a hybrid module that supports both CommonJS (legacy) and ES modules, thanks to [Modern Module](https://github.com/igorskyflyer/npm-modern-module).
+<div align="center">
+	<blockquote>
+		<h4>💖 Support further development</h4>
+		<span>I work hard for every project, including this one and your support means a lot to me!
+		<br>
+		Consider buying me a coffee. ☕
+		<br>
+		<strong>Thank you for supporting my efforts! 🙏😊</strong></span>
+		<br>
+		<br>
+		<a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="150"></a>
+		<br>
+		<br>
+		<a href="https://github.com/igorskyflyer"><em>@igorskyflyer</em></a>
+		<br>
+		<br>
+	</blockquote>
+</div>
 
 <br>
+<br>
+<br>
 
-## Usage
+## 🕵🏼 Usage
 
-### Install
+Install it by executing:
 
-```javascript
-npm install --save node-clone-js
+```shell
+npm i "@igor.dvlpr/node-clone-js"
 ```
+
+<br>
+
+## 🤹🏼 API
+
 
 ### Simple array copy
 
 ```javascript
-const clone = require('node-clone-js')
+import { clone } from '@igor.dvlpr/node-clone-js'
 
-let firstArray = [1, 2, 3]
-let secondArray = clone(firstArray)
+const firstArray = [1, 2, 3]
+const secondArray = clone(firstArray)
 
 secondArray[0] = 5
 
@@ -41,9 +60,9 @@ console.log('secondArray => ', secondArray) // [5, 2, 3]
 ### Complex array (array of objects)
 
 ```javascript
-const clone = require('node-clone-js')
+import { clone } from '@igor.dvlpr/node-clone-js'
 
-let firstArray = [
+const firstArray = [
   {
     id: '103',
     name: 'Peter',
@@ -53,7 +72,7 @@ let firstArray = [
     name: 'Eve',
   },
 ]
-let secondArray = clone(firstArray)
+const secondArray = clone(firstArray)
 
 secondArray[0].name = 'John'
 
@@ -64,15 +83,15 @@ console.log('secondArray => ', secondArray)
 ### Simple object copy
 
 ```javascript
-const clone = require('node-clone-js')
+import { clone } from '@igor.dvlpr/node-clone-js'
 
-let firstStudent = {
+const firstStudent = {
   id: 103,
   name: 'Ben',
   classes: ['Maths', 'Science', 'English language'],
 }
 
-let secondStudent = clone(firstStudent)
+const secondStudent = clone(firstStudent)
 
 secondStudent.classes[0] = 'Psychology'
 
@@ -83,9 +102,9 @@ console.log('secondStudent => ', secondStudent)
 ### Nested object copy
 
 ```javascript
-const clone = require('node-clone-js')
+import { clone } from '@igor.dvlpr/node-clone-js'
 
-let firstStudent = {
+const firstStudent = {
   id: 103,
   name: 'Ben',
   subjects: {
@@ -99,13 +118,15 @@ let firstStudent = {
   },
 }
 
-let secondStudent = clone(firstStudent)
+const secondStudent = clone(firstStudent)
 
 secondStudent.subjects.groupDke.maths = 'B'
 
 console.log('firstStudent => ', firstStudent)
 console.log('secondStudent => ', secondStudent)
 ```
+
+---
 
 ### Development
 
@@ -123,8 +144,30 @@ npm install
 npm test
 ```
 
-### Benchmark
+## 🪪 License
 
-```shell
-npm run benchmark
-```
+Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-clone-js/blob/main/LICENSE).
+
+---
+
+## 🧬 Related
+
+[@igor.dvlpr/pathexists](https://www.npmjs.com/package/@igor.dvlpr/pathexists)
+
+> _🧲 Provides ways of properly checking if a path exists inside a given array of files/directories both on Windows and UNIX-like operating systems. 🗺_
+
+[@igor.dvlpr/zep](https://www.npmjs.com/package/@igor.dvlpr/zep)
+
+> _🧠 Zep is a zero-dependency, efficient debounce module. ⏰_
+
+[@igor.dvlpr/valid-path](https://www.npmjs.com/package/@igor.dvlpr/valid-path)
+
+> _🧰 Provides ways of testing whether a given value can be a valid file/directory name. 🏜_
+
+[@igor.dvlpr/my-file-path](https://www.npmjs.com/package/@igor.dvlpr/my-file-path)
+
+> _🌟 An npm module that strongly types file paths! 🥊_
+
+[@igor.dvlpr/recursive-readdir](https://www.npmjs.com/package/@igor.dvlpr/recursive-readdir)
+
+> _📖 Provides recursive readdir() and readdirSync() functions. 📁_
