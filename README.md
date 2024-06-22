@@ -4,6 +4,10 @@
 
 A NPM package wrapper around a lightweight JavaScript utility allowing deep copy-by-value of nested objects, arrays and arrays of objects.
 
+>
+> This package has been deprecated, please use [@igor.dvlpr/node-clone-js](https://www.npmjs.com/package/@igor.dvlpr/node-clone-js) instead.
+>
+
 > Original repository, [clone.js](https://github.com/igorskyflyer/clone.js).
 
 <br>
