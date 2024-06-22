@@ -142,6 +142,8 @@ npm install
 npm test
 ```
 
+---
+
 ## 🪪 License
 
 Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-clone-js/blob/main/LICENSE).
