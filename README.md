@@ -173,6 +173,7 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 > _📖 Provides recursive readdir() and readdirSync() functions. 📁_
 
 <br>
+<br>
 
 >
 > Provided by **Igor Dimitrijević** (*@igorskyflyer*).
