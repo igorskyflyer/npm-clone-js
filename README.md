@@ -175,5 +175,5 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 <br>
 
 >
-> Provided by Igor Dimitrijević (@igorskyflyer).
+> Provided by **Igor Dimitrijević** (*@igorskyflyer*).
 >
