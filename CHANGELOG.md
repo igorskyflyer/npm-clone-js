@@ -1,11 +1,16 @@
-## 📒 Changelog
+# 📒 Changelog
 
-### of [@igor.dvlpr/node-clone-js](https://github.com/igorskyflyer/npm-clone-js)
+### of [@igorskyflyer/clone](https://github.com/igorskyflyer/npm-clone-js)
 
 <br>
 
-## v1.0.0
+## v1.0.1 (*28-Aug-2025*)
 
-<p align="right"><em>22-Jun-2024</em></p>
+- **💻 dev**: upgrade Node to >= 22
+- **💻 dev**: upgrade dependencies
+
+<br>
+
+## v1.0.0 (*22-Jun-2024*)
 
 - **🚀 launch**: initial release 🎉
