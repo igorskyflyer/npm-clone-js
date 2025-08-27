@@ -1,50 +1,54 @@
 {
-	"name": "@igor.dvlpr/node-clone-js",
-	"version": "1.0.0",
-	"description": "🧬 A lightweight JavaScript utility allowing deep copy-by-value of nested objects, arrays and arrays of objects. 🪁",
-	"sideEffects": false,
-	"engines": {
-		"node": ">=20.0"
-	},
-	"types": "./dist/index.d.mts",
-	"main": "./dist/index.mjs",
-	"module": "./dist/index.mjs",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsc",
-		"test": "vitest --run",
-		"debug": "vitest",
-		"pub": "npm test && npm run build && npm publish --access public"
-	},
-	"keywords": [
-		"clone",
-		"copy",
-		"array",
-		"nested",
-		"value",
-		"utility",
-		"lightweight",
-		"objects",
-		"igorskyflyer",
-		"igor.dvlpr"
-	],
-	"license": "MIT",
-	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
-	"funding": "https://ko-fi.com/igorskyflyer",
-	"homepage": "https://github.com/igorskyflyer/npm-clone-js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/igorskyflyer/npm-clone-js.git"
-	},
-	"bugs": {
-		"url": "https://github.com/igorskyflyer/npm-clone-js/issues"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.8.2",
-		"@types/node": "^20.14.7",
-		"typescript": "^5.5.2",
-		"vitest": "^1.6.0"
-	}
+    "name": "@igorskyflyer/clone",
+    "version": "1.0.1",
+    "description": "🧬 A lightweight JavaScript utility allowing deep copy-by-value of nested objects, arrays and arrays of objects. 🪁",
+    "sideEffects": false,
+    "engines": {
+        "node": ">=22.0"
+    },
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest --run",
+        "pub": "pnpm test && git push origin main --tags"
+    },
+    "keywords": [
+        "clone",
+        "copy",
+        "array",
+        "nested",
+        "value",
+        "utility",
+        "lightweight",
+        "objects",
+        "igorskyflyer"
+    ],
+    "license": "MIT",
+    "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
+    "funding": "https://ko-fi.com/igorskyflyer",
+    "homepage": "https://github.com/igorskyflyer/npm-clone-js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/igorskyflyer/npm-clone-js.git"
+    },
+    "bugs": {
+        "url": "https://github.com/igorskyflyer/npm-clone-js/issues"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.0",
+        "@igor.dvlpr/biome-config-igorskyflyer": "^2.0.1",
+        "@types/node": "^22.17.2",
+        "typescript": "^5.9.2",
+        "vitest": "^3.2.4"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "packageManager": "pnpm@10.15.0"
 }
