@@ -1,4 +1,7 @@
 {
     "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
-    "extends": ["@igor.dvlpr/biome-config-igorskyflyer"]
+    "extends": ["@igor.dvlpr/biome-config-igorskyflyer"],
+    "linter": {
+        "rules": { "suspicious": { "noExplicitAny": "off" } }
+    }
 }
