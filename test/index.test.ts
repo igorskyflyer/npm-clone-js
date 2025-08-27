@@ -1,7 +1,7 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
 import { assert, describe, it } from 'vitest'
-import { clone } from '../src/index.mjs'
+import { clone } from '../src/index.ts'
 
 describe('🧪 clone tests 🧪', () => {
   describe('null', () => {
