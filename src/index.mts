@@ -4,14 +4,14 @@
  * @param {any} object
  */
 function isObject(object: any) {
-	return typeof object === 'object'
+  return typeof object === 'object'
 }
 
 /**
  * @param {any} object
  */
 function isNull(object: any) {
-	return object === null
+  return object === null
 }
 
 /**
@@ -19,34 +19,34 @@ function isNull(object: any) {
  * @param {any} object
  */
 export function clone(object: any): object {
-	let copy: any
+  let copy: any
 
-	if (isNull(object) || !isObject(object)) {
-		return object
-	}
+  if (isNull(object) || !isObject(object)) {
+    return object
+  }
 
-	if (Array.isArray(object)) {
-		const count = object.length
-		copy = []
+  if (Array.isArray(object)) {
+    const count = object.length
+    copy = []
 
-		for (let i = 0; i < count; i++) {
-			copy[i] = clone(object[i])
-		}
+    for (let i = 0; i < count; i++) {
+      copy[i] = clone(object[i])
+    }
 
-		return copy
-	}
+    return copy
+  }
 
-	copy = {}
+  copy = {}
 
-	for (const key in object) {
-		if (Object.hasOwn(object, key)) {
-			if (!isObject(object[key])) {
-				copy[key] = object[key]
-			} else {
-				copy[key] = clone(object[key])
-			}
-		}
-	}
+  for (const key in object) {
+    if (Object.hasOwn(object, key)) {
+      if (isObject(object[key])) {
+        copy[key] = clone(object[key])
+      } else {
+        copy[key] = object[key]
+      }
+    }
+  }
 
-	return copy
+  return copy
 }
